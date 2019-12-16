@@ -1,0 +1,7 @@
+{
+    "author": "Nylu",
+    "description": "places markers on dead party members",
+    "disableAutoUpdate": false,
+    "name": "Party Death Markers",
+    "servers": ["https://raw.githubusercontent.com/NyluNyan/Party-Death-Markers/master/"]
+}
