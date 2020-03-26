@@ -10,7 +10,7 @@ module.exports = function PartyDeathMarks(mod)
 	mod.hook('S_PARTY_MEMBER_LIST', 7, event =>
 	{
 		Members = [];
-		for(i = 0; i < event.members.length; i++) Members.push(event.members[i].gameId, event.members[i].playerId, event.members[i].class);
+		for(var i = 0; i < event.members.length; i++) Members.push(event.members[i].gameId, event.members[i].playerId, event.members[i].class);
 	});
 	
 	mod.hook('S_SPAWN_USER', 15, event =>
@@ -77,7 +77,7 @@ module.exports = function PartyDeathMarks(mod)
 	
 	function UnmarkAll()
 	{
-		if(Marks.length) for(i = 0; Marks.length > 0; i++) Unmark(Marks[2]);
+		if(Marks.length) for(var i = 0; Marks.length > 0; i++) Unmark(Marks[2]);
 		markId = 777777777;
 	}
 	
